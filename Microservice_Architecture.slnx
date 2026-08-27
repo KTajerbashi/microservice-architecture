@@ -7,4 +7,19 @@
   <Folder Name="/1.GRPC/Server/">
     <Project Path="1.GRPC/Server/GRPC_App/GRPC_App.csproj" Id="252ce2ef-dcef-4ab7-82c1-5467723d2d67" />
   </Folder>
+  <Folder Name="/BasketSolution/">
+    <Project Path="BasketSolution/BasketApp/BasketApp.csproj" Id="4cab66e9-a829-4fac-9505-b86e0286faa9" />
+  </Folder>
+  <Folder Name="/DiscountSolution/">
+    <Project Path="DiscountSolution/DiscountApp/DiscountApp.csproj" Id="c5cf3d06-8de0-47ac-acf4-8467ae12eb6e" />
+  </Folder>
+  <Folder Name="/OrderSolution/">
+    <Project Path="OrderSolution/OrderApp/OrderApp.csproj" Id="c9e0b6ef-d0a2-4c30-88a5-d944da26cf25" />
+  </Folder>
+  <Folder Name="/ProductSolution/">
+    <Project Path="ProductSolution/ProductApp/ProductApp.csproj" Id="3813a900-24c7-4d44-9f94-458c6b12bbbf" />
+  </Folder>
+  <Folder Name="/UserSolution/">
+    <Project Path="UserSolution/UserApp/UserApp.csproj" Id="1f6b0cd6-0d0e-4fc4-997f-fb97b46faf60" />
+  </Folder>
 </Solution>
