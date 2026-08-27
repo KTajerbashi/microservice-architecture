@@ -2,6 +2,7 @@
   <Folder Name="/1.GRPC/" />
   <Folder Name="/1.GRPC/Clients/">
     <Project Path="1.GRPC/Clients/GRPC_Console_App/GRPC_Console_App.csproj" Id="bb6b75de-8329-4d96-8423-b0054c3ef7c3" />
+    <Project Path="1.GRPC/Clients/GRPC_Form_App/GRPC_Form_App.csproj" Id="6b5265d6-dd8c-40b1-bed7-80960affe308" />
   </Folder>
   <Folder Name="/1.GRPC/Server/">
     <Project Path="1.GRPC/Server/GRPC_App/GRPC_App.csproj" Id="252ce2ef-dcef-4ab7-82c1-5467723d2d67" />

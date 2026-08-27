@@ -5,6 +5,8 @@ option csharp_namespace = "GRPC_App.Protos";
 service ProductService
 {
 	rpc AddNewProduct(RequestAddProductDTO) returns (ResponseAddProductDTO);
+	rpc GetAllProduct(RequestAllProductDTO) returns (ResponseAllProductDTO);
+	rpc SearchProduct(RequestQueryProductDTO) returns (ResponseAllProductDTO);
 }
 
 message RequestAddProductDTO
@@ -17,4 +19,26 @@ message RequestAddProductDTO
 message ResponseAddProductDTO
 {
 	bool IsSuccess = 1;
+}
+
+message ProductItemDTO
+{
+	string Name = 1;
+	string Brand = 2;
+	int32 Price = 3;
+}
+message RequestAllProductDTO
+{
+	int32 Page = 1;
+	int32 PageSize = 2;
+}
+
+message RequestQueryProductDTO
+{
+	string Query = 1;
+}
+
+message ResponseAllProductDTO
+{
+	repeated ProductItemDTO Items = 1;
 }

@@ -34,4 +34,43 @@ public class ProductWebService : ProductService.ProductServiceBase
         });
         //return base.AddNewProduct(request, context);
     }
+
+    public override Task<ResponseAllProductDTO> GetAllProduct(RequestAllProductDTO request, ServerCallContext context)
+    {
+        var result = new ResponseAllProductDTO();
+        var data = Products
+            //.Skip(request.Page * request.PageSize).Take(request.PageSize)
+            .Select(x => new ProductItemDTO()
+            {
+                Brand = x.Brand,
+                Name = x.Name,
+                Price = x.Price
+            }).ToList();
+
+        result.Items.AddRange(data);
+
+        return Task.FromResult(result);
+        //return base.GetAllProduct(request, context);
+    }
+
+    public override Task<ResponseAllProductDTO> SearchProduct(RequestQueryProductDTO request, ServerCallContext context)
+    {
+        var result = new ResponseAllProductDTO();
+        var data = Products
+            .Where(x =>
+                x.Name.Contains(request.Query) ||
+                x.Brand.Contains(request.Query)
+            )
+            //.Skip(request.Page * request.PageSize).Take(request.PageSize)
+            .Select(x => new ProductItemDTO()
+            {
+                Brand = x.Brand,
+                Name = x.Name,
+                Price = x.Price
+            }).ToList();
+
+        result.Items.AddRange(data);
+
+        return Task.FromResult(result);
+    }
 }
