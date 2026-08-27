@@ -1,1 +1,9 @@
-<Solution />
+<Solution>
+  <Folder Name="/1.GRPC/" />
+  <Folder Name="/1.GRPC/Clients/">
+    <Project Path="1.GRPC/Clients/GRPC_Console_App/GRPC_Console_App.csproj" Id="bb6b75de-8329-4d96-8423-b0054c3ef7c3" />
+  </Folder>
+  <Folder Name="/1.GRPC/Server/">
+    <Project Path="1.GRPC/Server/GRPC_App/GRPC_App.csproj" Id="252ce2ef-dcef-4ab7-82c1-5467723d2d67" />
+  </Folder>
+</Solution>
